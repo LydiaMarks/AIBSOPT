@@ -24,20 +24,21 @@ from scipy.ndimage.filters import gaussian_filter1d
 ### Should update these for each subject ###
 
 # Set the location of the subject's histology folder #
-histology_loc = r'B:\mouse612221\histology'
+histology_loc = r'\\allen\programs\mindscope\workgroups\templeton-psychedelics\mouse771427\histology'
 
 # Set the data location for each experiment day #
 # Choose the folder that contains the experiment1 folder #
 # Can say: None if the dataset doesn't include a 2nd recording #
 data_location = {
-    1: r'B:\mouse612221\test1_2022-04-05_13-10-34',
-    2: None # None
+    1: r'\\allen\programs\mindscope\workgroups\templeton-psychedelics\mouse771427\THstim_d1_2025-01-22_10-36-51',
+    2: r'\\allen\programs\mindscope\workgroups\templeton-psychedelics\mouse771427\THstim_d2_2025-01-23_10-25-10',
+    3: r'\\allen\programs\mindscope\workgroups\templeton-psychedelics\mouse771427\THstim_d3_2025-01-24_10-40-15'
 }
 
 # Enter the probe letter location for the stim electrode #
 # This should match the letter used in the annotation_app #
 # For example: 'A' is the stim electrode was in the probeA holder #
-stim_elec_location = None # 'E'
+stim_elec_location = 'B' #None #'A'  'E'
 
 ################################################################################
 ################################################################################

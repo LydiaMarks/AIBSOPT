@@ -27,14 +27,15 @@ from scipy.ndimage.filters import gaussian_filter1d
 ### Should update these for each subject ###
 
 # Set the location of the subject's histology folder #
-histology_loc = r'B:\mouse612221\histology'
+histology_loc = r'\\allen\programs\mindscope\workgroups\templeton-psychedelics\mouse771427\histology'
 
 # Set the data location for each experiment day #
 # Choose the folder that contains the experiment1 folder #
 # Can say: None if the dataset doesn't include a 2nd recording #
 data_location = {
-    1: r'B:\mouse612221\test1_2022-04-05_13-10-34',
-    2: None # None
+    1: r'\\allen\programs\mindscope\workgroups\templeton-psychedelics\mouse771427\THstim_d1_2025-01-22_10-36-51',
+    2: r'\\allen\programs\mindscope\workgroups\templeton-psychedelics\mouse771427\THstim_d2_2025-01-23_10-25-10',
+    3: r'\\allen\programs\mindscope\workgroups\templeton-psychedelics\mouse771427\THstim_d3_2025-01-24_10-40-15'
 }
 
 ################################################################################
@@ -45,7 +46,8 @@ data_location = {
 
 probes = (
     'Probe A1', 'Probe B1', 'Probe C1', 'Probe D1', 'Probe E1', 'Probe F1',
-    'Probe A2', 'Probe B2', 'Probe C2', 'Probe D2', 'Probe E2', 'Probe F2'
+    'Probe A2', 'Probe B2', 'Probe C2', 'Probe D2', 'Probe E2', 'Probe F2',
+    'Probe A3', 'Probe B3', 'Probe C3', 'Probe D3', 'Probe E3', 'Probe F3'
 ) ## these are what probes are named in the TC_annotation_app ##
 
 labels = np.load(
